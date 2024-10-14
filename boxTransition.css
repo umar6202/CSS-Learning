@@ -1,0 +1,21 @@
+/*
+html
+<div class="box"></div>
+*/
+
+body{
+
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background: #11ff00;
+    width: 400px;
+    height: 400px;
+    transition-duration: 1s;
+    transition-property: transform;
+}
+.box:hover{
+    background: #ff00f7;
+    transform: rotate(360deg);
+}

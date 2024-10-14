@@ -1,0 +1,45 @@
+/* 
+html 
+<div class="parent">
+        <div class="child"></div>
+    </div>
+*/
+
+.parent{
+    background: #ff0000;
+    width: 400px;
+    height: 400px;
+}
+
+.child{
+    background: #001eff;
+    width: 50%;
+    height: 50%;
+    animation-name: movingObj;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movingObj{
+    0%{
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: translateY(100%);
+    }
+
+    50%{
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
